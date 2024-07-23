@@ -1,0 +1,46 @@
+Riya wants to find the sum of range values. could you please help her to implements the program.
+
+Input Format
+
+input consists of two integer
+Constraints
+
+No Constraints
+
+Output Format
+
+print the sum of range values.
+Sample Input 0
+
+1
+5
+Sample Output 0
+
+The sum of Range value from 1 to 5 is 15.0
+Sample Input 1
+
+5
+10
+Sample Output 1
+
+The sum of Range value from 5 to 10 is 45.0
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int s=sc.nextInt();
+        int sum=0;
+        for(int i=n;i<=s;i++)
+        {
+            sum+=i;
+        }
+        System.out.println("The sum of Range value from " +n+ " to " +s+ " is " +sum+".0");
+                           
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
